@@ -7,11 +7,5 @@ isProduction(window.location, (color, style) => {
 
 
 function isProduction(url, cb) {
-    chrome.storage.sync.get('records', (items) => {
-        items.records.some(record => {
-            return record.pattern && url.toString().indexOf(record.pattern) !== -1 &&
-                cb(record.color, record.stylez);
-
-        });
-    });
+    chrome.storage.sync.get('records', (items) => items.records.some(record => record.pattern && url.toString().indexOf(record.pattern) !== -1 && cb(record.color, record.stylez)));
 }
