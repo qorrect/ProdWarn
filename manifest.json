@@ -1,5 +1,5 @@
 {
-  "name": "Prod Warn",
+  "name": "Prod Warning",
   "version": "1.0",
   "description": "Warn you when your on production sites ",
   "permissions": [

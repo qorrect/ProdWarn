@@ -1,4 +1,4 @@
-const numberOfSites = 11;
+const numberOfSites = 2;
 
 function saveOptions(e) {
     //
@@ -10,6 +10,8 @@ function saveOptions(e) {
             no: i,
             pattern: document.querySelector("#p" + i).value,
             color: document.querySelector("#c" + i).value,
+            stylez: document.querySelector("#s" + i).value,
+
         };
         records.push(record);
     }
@@ -27,7 +29,9 @@ function restoreOptions() {
             const records = result.records;
             records.forEach(function (element) {
                 document.querySelector("#p" + element.no).value = element.pattern;
-                if (element.color) document.querySelector("#c" + element.no).value = element.color;
+                if (element && element.color) document.querySelector("#c" + element.no).value = element.color;
+                if (element && element['stylez']) document.querySelector("#s" + element.no).value = element.stylez;
+
             });
         }
 
@@ -43,10 +47,11 @@ function restoreOptions() {
 }
 
 function resetForm() {
-    document.querySelector("#c0").value = "Red";
     for (let i = 1; i < numberOfSites; i++) {
         document.querySelector("#p" + i).value = "";
         document.querySelector("#c" + i).value = "";
+        document.querySelector("#s" + i).value = "";
+
     }
     document.querySelector("#saveButton").disabled = false;
 }
@@ -56,12 +61,16 @@ function main() {
     document.querySelector("form").addEventListener("submit", saveOptions);
     document.querySelector("#resetButton").addEventListener("click", resetForm);
 
-    for (let i = 0; i < 7; i++) {
+    for (let i = 0; i < numberOfSites; i++) {
         document.querySelector("#p" + i).addEventListener("input",
             () => {
                 document.querySelector("#saveButton").disabled = false;
             });
         document.querySelector("#c" + i).addEventListener("change",
+            () => {
+                document.querySelector("#saveButton").disabled = false;
+            });
+        document.querySelector("#s" + i).addEventListener("input",
             () => {
                 document.querySelector("#saveButton").disabled = false;
             });

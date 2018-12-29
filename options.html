@@ -14,8 +14,10 @@
 			<pre>
 HOW TO USE:
 1. Enter the domains that you would like to paint a border around
-   ( might I recommend <span style="color: red;font-weight: bold;">prod</span> , <span style="color: orange;font-weight: bold;">staging</span> , <span style="color: green;font-weight: bold;">test</span> )
+   ( I use <span style="color: red;font-weight: bold;">prod</span> , <span style="color: orange;font-weight: bold;">staging</span> , <span
+                    style="color: green;font-weight: bold;">test</span> )
 2. Set the color of the border.
+2. (Optional) Set the border style yourself
 
 		</pre>
     </div>
@@ -25,6 +27,8 @@ HOW TO USE:
             <tr>
                 <td><span style="text-decoration: underline;">Custom Domain</span></td>
                 <td><span style="text-decoration: underline;">Color</span></td>
+                <td><span style="text-decoration: underline;">Border Property Override</span></td>
+
             </tr>
             <tr>
                 <td>
@@ -41,7 +45,9 @@ HOW TO USE:
                         <option value="Purple" style="background:Purple;color: white;">Purple</option>
                     </select>
                 </td>
-
+                <td>
+                    <input type="text" class="stylez" id="s0" placeholder="10px outset #ffaacd"/>
+                </td>
             </tr>
             <tr>
                 <td>
@@ -58,166 +64,11 @@ HOW TO USE:
                         <option value="Purple" style="background:Purple;color: white;">Purple</option>
                     </select>
                 </td>
-
-            </tr>
-            <tr>
                 <td>
-                    <input type="text" class="pattern" id="p2"/>
-                </td>
-                <td>
-                    <select id="c2">
-
-                        <option selected="selected" value="Red" style="background:red;">Red</option>
-                        <option value="Orange" style="background:Orange;">Orange</option>
-                        <option value="Yellow" style="background:Yellow">Yellow</option>
-                        <option value="Green" style="background:Green">Green</option>
-                        <option value="Aqua" style="background:Aqua;">Aqua</option>
-                        <option value="Blue" style="background:Blue;color: white;">Blue</option>
-                        <option value="Purple" style="background:Purple;color: white;">Purple</option>
-                    </select>
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" class="pattern" id="p3"/>
-                </td>
-                <td>
-                    <select id="c3">
-
-                        <option selected="selected" value="Red" style="background:red;">Red</option>
-                        <option value="Orange" style="background:Orange;">Orange</option>
-                        <option value="Yellow" style="background:Yellow">Yellow</option>
-                        <option value="Green" style="background:Green">Green</option>
-                        <option value="Aqua" style="background:Aqua">Aqua</option>
-                        <option value="Blue" style="background:Blue">Blue</option>
-                        <option value="Purple" style="background:Purple">Purple</option>
-                    </select>
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" class="pattern" id="p4"/>
-                </td>
-                <td>
-                    <select id="c4">
-
-                        <option selected="selected" value="Red" style="background:red;">Red</option>
-                        <option value="Orange" style="background:Orange;">Orange</option>
-                        <option value="Yellow" style="background:Yellow">Yellow</option>
-                        <option value="Green" style="background:Green">Green</option>
-                        <option value="Aqua" style="background:Aqua">Aqua</option>
-                        <option value="Blue" style="background:Blue">Blue</option>
-                        <option value="Purple" style="background:Purple">Purple</option>
-                    </select>
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" class="pattern" id="p5"/>
-                </td>
-                <td>
-                    <select id="c5">
-
-                        <option selected="selected" value="Red" style="background:red;">Red</option>
-                        <option value="Orange" style="background:Orange;">Orange</option>
-                        <option value="Yellow" style="background:Yellow">Yellow</option>
-                        <option value="Green" style="background:Green">Green</option>
-                        <option value="Aqua" style="background:Aqua">Aqua</option>
-                        <option value="Blue" style="background:Blue">Blue</option>
-                        <option value="Purple" style="background:Purple">Purple</option>
-                    </select>
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" class="pattern" id="p6"/>
-                </td>
-                <td>
-                    <select id="c6">
-
-                        <option selected="selected" value="Red" style="background:red;">Red</option>
-                        <option value="Orange" style="background:Orange;">Orange</option>
-                        <option value="Yellow" style="background:Yellow">Yellow</option>
-                        <option value="Green" style="background:Green">Green</option>
-                        <option value="Aqua" style="background:Aqua">Aqua</option>
-                        <option value="Blue" style="background:Blue">Blue</option>
-                        <option value="Purple" style="background:Purple">Purple</option>
-                    </select>
-                </td>
-
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" class="pattern" id="p7"/>
-                </td>
-                <td>
-                    <select id="c7">
-
-                        <option selected="selected" value="Red" style="background:red;">Red</option>
-                        <option value="Orange" style="background:Orange;">Orange</option>
-                        <option value="Yellow" style="background:Yellow">Yellow</option>
-                        <option value="Green" style="background:Green">Green</option>
-                        <option value="Aqua" style="background:Aqua">Aqua</option>
-                        <option value="Blue" style="background:Blue">Blue</option>
-                        <option value="Purple" style="background:Purple">Purple</option>
-                    </select>
+                    <input type="text" class="stylez" id="s1" placeholder="10px outset #ffaacd"/>
                 </td>
             </tr>
-            <tr>
-                <td>
-                    <input type="text" class="pattern" id="p8"/>
-                </td>
-                <td>
-                    <select id="c8">
 
-                        <option selected="selected" value="Red" style="background:red;">Red</option>
-                        <option value="Orange" style="background:Orange;">Orange</option>
-                        <option value="Yellow" style="background:Yellow">Yellow</option>
-                        <option value="Green" style="background:Green">Green</option>
-                        <option value="Aqua" style="background:Aqua">Aqua</option>
-                        <option value="Blue" style="background:Blue">Blue</option>
-                        <option value="Purple" style="background:Purple">Purple</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" class="pattern" id="p9"/>
-                </td>
-                <td>
-                    <select id="c9">
-
-                        <option selected="selected" value="Red" style="background:red;">Red</option>
-                        <option value="Orange" style="background:Orange;">Orange</option>
-                        <option value="Yellow" style="background:Yellow">Yellow</option>
-                        <option value="Green" style="background:Green">Green</option>
-                        <option value="Aqua" style="background:Aqua">Aqua</option>
-                        <option value="Blue" style="background:Blue">Blue</option>
-                        <option value="Purple" style="background:Purple">Purple</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" class="pattern" id="p10"/>
-                </td>
-                <td>
-                    <select id="c10">
-
-                        <option selected="selected" value="Red" style="background:red;">Red</option>
-                        <option value="Orange" style="background:Orange;">Orange</option>
-                        <option value="Yellow" style="background:Yellow">Yellow</option>
-                        <option value="Green" style="background:Green">Green</option>
-                        <option value="Aqua" style="background:Aqua">Aqua</option>
-                        <option value="Blue" style="background:Blue">Blue</option>
-                        <option value="Purple" style="background:Purple">Purple</option>
-                    </select>
-                </td>
-            </tr>
         </table>
         <div>
             <button id="saveButton" type="submit" disabled=true>Save</button>
@@ -227,7 +78,9 @@ HOW TO USE:
     </form>
 
     <footer>
-        Please <a href="view-source:border.js">have a look at the source code</a>
+        <a target="_blank" href="https://github.com/qorrect/ProdWarn/blob/master/border.js">Please have a look at the
+            source</a>. <br/>
+        We are reading window.location and setting body.style.border to your selection.
     </footer>
     <script src="options.js"></script>
 </main>
