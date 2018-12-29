@@ -1,4 +1,4 @@
-const numberOfSites = 2;
+const numberOfSites = 12;
 
 function saveOptions(e) {
     //
@@ -47,7 +47,7 @@ function restoreOptions() {
 }
 
 function resetForm() {
-    for (let i = 1; i < numberOfSites; i++) {
+    for (let i = 0; i < numberOfSites; i++) {
         document.querySelector("#p" + i).value = "";
         document.querySelector("#c" + i).value = "";
         document.querySelector("#s" + i).value = "";
