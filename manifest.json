@@ -1,7 +1,7 @@
 {
   "name": "Prod Warning",
   "version": "0.1.0",
-  "description": "Warn you when your on production sites",
+  "description": "Warn you when you're on production sites",
   "permissions": [
     "storage"
   ],

@@ -6,11 +6,11 @@ isProduction(window.location, (color, style) => {
 });
 
 
-function isProduction(url, cb) {
+function isProduction(url, isProdCallback) {
     chrome.storage.sync.get('records', (items) =>
         items.records.some(record => {
             return record.pattern && url.toString().indexOf(record.pattern) !== -1 &&
-                cb(record.color, record.stylez);
+                isProdCallback(record.color, record.stylez);
         })
     );
 }
