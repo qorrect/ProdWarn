@@ -2,6 +2,7 @@ isProduction(window.location, (color, style) => {
     if (style) document.body.style.border = style;
     else document.body.style.border = "8px outset " + color;
     // It looks funky otherwise
+    document.body.style.padding = "5px";
     document.body.style.margin = "0px";
 });
 
